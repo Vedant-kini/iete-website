@@ -1,0 +1,23 @@
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .social-links {
+    margin-bottom: 10px;
+  }
+  
+  .social-logo {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-logo:hover {
+    transform: scale(1.1);
+  }
+  
+  
