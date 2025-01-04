@@ -1,0 +1,46 @@
+/* Styles for the Header */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #007bff;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+.nav-links li {
+  margin: 0 10px;
+  position: relative;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+.nav-links .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  color: black;
+  display: none;
+  list-style: none;
+}
+.nav-links .dropdown-menu li {
+  padding: 5px 10px;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.cta-button {
+  padding: 10px 15px;
+  background: #28a745;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.cta-button:hover {
+  background: #218838;
+}

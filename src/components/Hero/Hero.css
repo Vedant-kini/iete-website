@@ -1,0 +1,19 @@
+/* Styles for the Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #007bff, #6610f2);
+  color: white;
+  text-align: center;
+}
+.hero-content h1 {
+  font-size: 3em;
+}
+.hero-content p {
+  font-size: 1.5em;
+}
+.cta-button {
+  margin-top: 20px;
+}
