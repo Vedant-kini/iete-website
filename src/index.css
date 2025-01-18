@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Gradient Background */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(90deg, #909ec7, #d09fbb);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  font-family: Arial, sans-serif; /* Replace with your preferred font */
+  color: white; /* Ensure text is visible against the dark gradient */
+}
+
+/* #e7c3d8 */
+/* #bac4e3 */
+/* #e5e7eb */

@@ -2,12 +2,21 @@
 .section {
   padding: 60px 20px;
   text-align: center;
-  background: #f8f9fa;
 }
+
+.events-title {
+  color: white;
+  font-size: 2.4rem;
+}
+
 .placeholder {
   background: #e9ecef;
   height: 200px;
   line-height: 200px;
   color: #6c757d;
   font-size: 1.2em;
+  background: white; /* White background */
+  color: #2a2929; /* Dark text for content */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 20px 20px 15px rgba(0, 0, 0, 0.2); 
 }
