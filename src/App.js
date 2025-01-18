@@ -1,28 +1,45 @@
-import React from 'react';
-import Header from './components/Header/Header';  // Update the path if needed
-import Hero from './components/Hero/Hero';  // Update the path if needed
-import Magazines from './components/Magazine/Magazine';  // Update the path if needed
-import Team from './components/Team/Team';  // Update the path if needed
-import Events from './components/Events/Events';  // Update the path if needed
-import Contact from './components/Contact/Contact';  // Update the path if needed
-import Footer from './components/Footer/Footer';  // Update the path if needed
-import 'font-awesome/css/font-awesome.min.css';
-
-
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/Header/Header";
+import Hero from "./components/Hero/Hero";
+import About from "./components/About/About";
+import Magazines from "./components/Magazine/Magazine";
+import Team from "./components/Team/Team"; // Updated Team Section
+import TeamPage from "./components/Team/TeamPage"; // New Team Page
+import Events from "./components/Events/Events";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
+import Inspirations from "./components/Inspirations/Inspirations";
+import "font-awesome/css/font-awesome.min.css";
 
 const App = () => {
   return (
-    <div>
-      <Header />
-      <Hero />
-      <Magazines />
-      <Team />
-      <Events />
-      <Contact />
-      <Footer />
-    </div>
+    <Router>
+      <div>
+        <Header />
+        <Routes>
+          {/* Main Page with all sections */}
+          <Route
+            path="/"
+            element={
+              <>
+                <Hero />
+                <About />
+                <Inspirations />
+                <Team />
+                <Events />
+                <Magazines />
+                <Contact />
+                <Footer />
+              </>
+            }
+          />
+          {/* New Team Page */}
+          <Route path="/teampage" element={<TeamPage />} />
+        </Routes>
+      </div>
+    </Router>
   );
 };
 
 export default App;
-
